@@ -10,7 +10,7 @@ namespace Caelum.Leilao.Tests
         {
             Leilao leilao = new Leilao("Carro");
 
-            leilao.Propoe(new Lance(new Usuario("caiasdasdasdo"), 1000));
+            leilao.Propoe(new Lance(new Usuario("caiasdasdasdoasdasd"), 1000));
             leilao.Propoe(new Lance(new Usuario("aline"), 2000));
             leilao.Propoe(new Lance(new Usuario("caio"), 3000));
             leilao.Propoe(new Lance(new Usuario("caio"), 4000));
