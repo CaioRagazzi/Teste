@@ -1,6 +1,11 @@
 pipeline {
     agent any
-
+    
+    stage ('Restore Packages') { 
+        steps {
+            bat "dotnet restore"
+              }
+    }
     stages {
         stage('Build') {
             steps {
