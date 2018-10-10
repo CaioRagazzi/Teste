@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Restore') {
             steps {
-                echo 'Building..'
+                echo 'Restoring..'
+                bat "dotnet restore"
             }
         }
         stage('Test') {
