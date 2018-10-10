@@ -1,5 +1,11 @@
-stage 'Checkout'
- node('slave') {
-  deleteDir()
-  checkout scm
- }
+pipeline {
+  ...
+  stages {
+    stage('HelloWorld') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+  }
+}
+    
