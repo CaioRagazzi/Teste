@@ -1,12 +1,12 @@
 pipeline {
     agent any
-    
-    stage ('Restore Packages') { 
-        steps {
-            bat "dotnet restore"
-              }
     }
     stages {
+        stage ('Restore Packages') { 
+            steps {
+                bat "dotnet restore"
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building 123..'
