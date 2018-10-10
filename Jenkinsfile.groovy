@@ -1,6 +1,8 @@
-node{
-  stage('Caio'){
-    echo "-------"
+pipeline{
+  node{
+    stage('Caio'){
+      echo "-------"
+    }
   }
 }
     
